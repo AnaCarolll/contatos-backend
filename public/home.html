@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +11,45 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/home.css">
-    <title>Contatos</title> 
+    <title>Contatos</title>
 </head>
+
 <body>
 
     <div id="login-container">
-        <form>
+        <form id="form" action="#" onsubmit='valida()'>
             <label>
                 <span>E-mail:</span>
                 <input type="email" name="email" id="email">
             </label>
-            
+
             <label>
                 <span>Senha:</span>
                 <input type="password" name="senha" id="senha">
             </label>
 
             <div class="controles">
-                <a href="#">Esqueci a senha</a>
+                <a id="link">Esqueci a senha</a>
                 <button type="submit">Entrar</button>
             </div>
         </form>
+
+       <!-- <script>
+            function valida() {
+                if (document.getElementById('email').value == '') {
+                    alert('Você esqueceu o Email!');
+                    document.getElementById('email');
+                    return false;
+
+                };
+                if (document.getElementById('senha').value == ''){
+                    alert('Você esqueceu a Senha!');
+
+                };
+            }
+        </script>-->
+
+      
     </div>
 
     <div id="app-container">
@@ -45,12 +64,12 @@
                 <li><a href="index.html"><i class="material-icons">exit_to_app</i></a></li>
             </ul>
         </nav>
-    
+
         <main>
         </main>
-    
+
         <div id="modal">
-            <form>
+            <form id="form">
                 <label>
                     Nome:
                     <input type="text" name="nome" id="nome">
@@ -91,4 +110,5 @@
 
     <script src="/js/home.js"></script>
 </body>
+
 </html>
